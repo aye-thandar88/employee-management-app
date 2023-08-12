@@ -5,7 +5,7 @@ const Noti = ({ message, type }) => {
   message && toast.success(message);
   return (
     <div className="w-20 flex">
-      <ToastContainer
+      {/* <ToastContainer
         position="top-right"
         autoClose={2000}
         // limit={2}
@@ -17,7 +17,7 @@ const Noti = ({ message, type }) => {
         // draggable
         // pauseOnHover
         // theme="light"
-      />
+      /> */}
     </div>
   );
 };

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { HiPencilAlt, HiTrash } from "react-icons/hi";
+import { HiPencilAlt } from "react-icons/hi";
 import Link from "next/link";
-import { useQuery, useQueryClient, useMutation } from "react-query";
-import { deleteEmployee, getEmployees } from "@/libs/fetchApi";
+import { useQuery } from "react-query";
+import {  getEmployees } from "@/libs/fetchApi";
 import RemoveEmployee from "./RemoveEmployee";
 import SearchEmployee from "./SearchEmployee";
 
