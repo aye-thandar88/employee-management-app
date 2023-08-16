@@ -2,28 +2,40 @@ const BASE_URL = "http://localhost:3000/api";
 
 //get all employees
 export const getEmployees = async () => {
-  const res = await fetch(`${BASE_URL}/employees`, { method: "GET" });
-  // add the remaining CORS headers to the response
-  res.headers.append('Access-Control-Allow-Credentials', "true")
-  res.headers.append('Access-Control-Allow-Methods', 'GET,DELETE,PATCH,POST,PUT')
-  res.headers.append(
-      'Access-Control-Allow-Headers',
-      'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-  )
-
+  const res = await fetch(`${BASE_URL}/employees`, {
+    method: "GET",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
   return res.json();
 };
 
 //get search employees
 export const getSearchEmployees = async (id) => {
-  const res = await fetch(`${BASE_URL}/employees/${id}`, { method: "GET" });
-
+  const res = await fetch(`${BASE_URL}/employees/${id}`, {
+    method: "GET",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
   return res.json();
 };
 
 //get single employee
 export const getEmployee = async (id) => {
-  const res = await fetch(`${BASE_URL}/employees/${id}`, { method: "GET" });
+  const res = await fetch(`${BASE_URL}/employees/${id}`, {
+    method: "GET",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
   return res.json();
 };
 
