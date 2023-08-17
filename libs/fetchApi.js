@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:3000/api";
+// const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://exquisite-speculoos-bfb151.netlify.app";
 
 //get all employees
 export const getEmployees = async () => {
