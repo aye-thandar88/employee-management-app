@@ -1,5 +1,5 @@
 // const BASE_URL = "http://localhost:3000/api";
-const BASE_URL = "https://exquisite-speculoos-bfb151.netlify.app/api";
+const BASE_URL = "https://dev--statuesque-halva-7a371d.netlify.app/api";
 
 //get all employees
 export const getEmployees = async () => {
