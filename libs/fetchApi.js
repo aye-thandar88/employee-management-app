@@ -5,11 +5,6 @@ const BASE_URL = "https://exquisite-speculoos-bfb151.netlify.app/api";
 export const getEmployees = async () => {
   const res = await fetch(`${BASE_URL}/employees`, {
     method: "GET",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
-    },
   });
   return res.json();
 };
@@ -18,11 +13,6 @@ export const getEmployees = async () => {
 export const getSearchEmployees = async (id) => {
   const res = await fetch(`${BASE_URL}/employees/${id}`, {
     method: "GET",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
-    },
   });
   return res.json();
 };
@@ -31,11 +21,6 @@ export const getSearchEmployees = async (id) => {
 export const getEmployee = async (id) => {
   const res = await fetch(`${BASE_URL}/employees/${id}`, {
     method: "GET",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
-    },
   });
   return res.json();
 };
